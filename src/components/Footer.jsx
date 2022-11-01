@@ -1,7 +1,7 @@
 import GobiernoMexico from '../assets/imgs/GobiernoDeMexico.png';
 import Facebook from '../assets/imgs/FacebookBlanco.png';
 import Twitter from '../assets/imgs/twitterBlanco.png';
-import '../assets/styles/Footer.css'
+import '../assets/styles/footer.css'
 
 function Footer() {
     return (

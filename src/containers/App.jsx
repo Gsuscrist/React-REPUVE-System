@@ -1,13 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-function App(){
-    return(
+import ConsultaVehicular from "../pages/ConsultaVehicular";
+function App() {
+    return (  
         <>
-            <Header></Header>
-            <Footer></Footer>
+        <ConsultaVehicular></ConsultaVehicular>
         </>
-
-
     );
 }
+
 export default App;

@@ -1,4 +1,4 @@
-import '../assets/styles/Header.css'
+import '../assets/styles/header.css'
 import GobiernoMexico from '../assets/imgs/GobiernoDeMexico.png'
 import Perfil from '../assets/imgs/PerfilBlanco.png'
 
