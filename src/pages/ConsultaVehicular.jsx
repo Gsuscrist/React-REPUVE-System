@@ -2,8 +2,8 @@ import Header from '../components/Header';
 import Advertencia from '../components/Advertencia';
 import Footer from '../components/Footer';
 
-import lupa from '../assets/Images/lupa.png';
-import flecha from '../assets/Images/Flecha.png';
+import lupa from '../assets/imgs/lupa.png';
+import flecha from '../assets/imgs/Flecha.png';
 
 import '../assets/Styles/consultaVehicular.css';
 
