@@ -1,6 +1,4 @@
 .footer{
-    position:absolute;
-    bottom: 0;
     width: 100%;
     height: 472px;
     display: flex;
@@ -22,8 +20,7 @@
 .logotipo{
     height: 100px;
     width: 278px;
-    position: absolute;
-    left: 7.89%;
+    left: 15%;
     right: 70.39%;
     top: 11.02%;
     bottom: 67.8%;
