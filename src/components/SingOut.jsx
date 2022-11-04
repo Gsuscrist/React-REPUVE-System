@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import '../assets/style/SingOut.css';
+import '../assets/styles/singOut.css';
  
 function SingOut() {
-
 
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
@@ -44,7 +43,7 @@ function SingOut() {
                     <button type="submit" onClick={()=>(console.log("hola"))}>Iniciar</button>
                 </div>
                 <div className='registrar'>
-                    <a href="">Registarme aqui</a>
+                    <a href="#VehicleView">Registarme aqui</a>
                 </div>
             </div>
         </form>
