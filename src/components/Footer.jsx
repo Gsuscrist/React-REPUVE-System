@@ -1,7 +1,10 @@
 import GobiernoMexico from '../assets/imgs/GobiernoDeMexico.png';
 import Facebook from '../assets/imgs/FacebookBlanco.png';
 import Twitter from '../assets/imgs/twitterBlanco.png';
+
+//ENCONTRE DOS FOOTERS HACIENDO EL MERGE CHEQUEN QPD PORFA
 import '../assets/styles/footer.css'
+import '../assets/styles/Footer.css'
 
 function Footer() {
     return (

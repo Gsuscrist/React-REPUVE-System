@@ -1,10 +1,13 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ConsultaVehicular from "../pages/ConsultaVehicular";
-function App() {
-    return (  
+
+import VehicleView from "../components/VehicleView";
+function App(){
+    return(
         <>
-        <ConsultaVehicular></ConsultaVehicular>
+            <Header></Header>
+            <VehicleView></VehicleView>
+            <Footer></Footer>
         </>
     );
 }

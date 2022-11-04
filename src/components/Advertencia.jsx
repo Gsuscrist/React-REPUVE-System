@@ -1,6 +1,7 @@
 import '../assets/Styles/advertencia.css';
 function Advertencia() {
-    return (  
+
+    return (
         <div className="container-advertencia">
             <span className="Advert">POR FAVOR INGRESE LOS DATOS COMO SE LE INDICA </span>
         </div>

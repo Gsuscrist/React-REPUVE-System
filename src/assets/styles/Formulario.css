@@ -1,0 +1,70 @@
+.encabezado-registroVehicular{
+    display: flex;
+    margin-left: 90px;
+}
+
+.encabezado-registroVehicular h1{
+    margin-left: 10px;
+}
+
+.Boton-volver{
+    display: flex;
+    margin-left: 90px;
+}
+.Boton-volver img{
+    margin-left: 10px;
+    width: 35px;
+}
+.Boton-volver h2{
+    font-size: 50px;
+}
+.inputs{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 90px;
+}
+.input-form{
+    width: 55%;
+    height: 35px;
+    border: 3px solid rgba(125, 123, 123, 0.64);
+    border-radius: 10px;
+}
+.input-texto{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.input-form:hover{
+    border-color:black
+}
+.boton-registrar{
+    background: #13322B;
+    border-radius: 10px;
+    height: 50px;
+    width: 270px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-left: 270px;
+    margin-top: 50px;
+}
+.boton-registrar:hover{
+    border-color: #FFFFFF;
+}
+.iconoCar{
+    width: 30px;
+}
