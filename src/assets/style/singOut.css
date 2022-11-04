@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container_login{
+    width: 30%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+}
+h1{
+    text-align: center;
+}
+input{
+    width: 100%;
+    border-top-color: #b2b2b334;
+    border-left-color: #b2b2b334;
+    border-right-color: #b2b2b334;
+    border-bottom-color: rgba(133, 134, 135, 0.484);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px;
+}
+button[type="submit"]{
+    margin-left: 40%;
+    width: 30%;
+    padding: 2px;
+    background: #79C8A0;
+    border: 1.07509px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+}
+.registrar{
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 60px;
+    background: #000000;
+    border-radius: 5%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}

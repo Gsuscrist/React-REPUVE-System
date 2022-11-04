@@ -1,0 +1,27 @@
+
+.footer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:15%;
+    width:100%;
+    background: #13322B;
+    color: aliceblue;
+}
+.colum{
+    display: flex;
+}
+.columnas{ 
+    width: 30%;
+}
+
+.columnas p{
+    font-size: 12px;
+}
+
+.lopoGobierno{
+    width: 76%;
+}
+
+.siguenos img{
+    width: 15%;
+}
+
