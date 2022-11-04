@@ -24,7 +24,12 @@
     height: 100px;
     width: 278px;
     position: static;
-    padding-right: 100px;
+
+    left: 7.89%;
+    right: 70.39%;
+    top: 11.02%;
+    bottom: 67.8%;
+
 }
 
 /*/ESTE ES SPAN de los titulos/*/
