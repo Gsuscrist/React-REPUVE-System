@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     background: #13322B;
+
 }
 .contenido{
     height: 380px;
@@ -23,10 +24,12 @@
     height: 100px;
     width: 278px;
     position: static;
+
     left: 7.89%;
     right: 70.39%;
     top: 11.02%;
     bottom: 67.8%;
+
 }
 
 /*/ESTE ES SPAN de los titulos/*/
@@ -83,6 +86,7 @@
 .RedesSociales{
     display: flex;
     flex-direction: column;
+    padding-left: 100px;
 }
 .siguenos{
     font-family: 'Montserrat';
