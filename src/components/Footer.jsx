@@ -1,7 +1,7 @@
 import Gobierno from '../assets/img/Gobierno.png'
 import facebook from "../assets/img/facebook.png"
 import twitter from "../assets/img/twitter.png"
-import '../assets/style/footer.css'
+import '../assets/style/Footer.css'
 
 
 function Footer() {

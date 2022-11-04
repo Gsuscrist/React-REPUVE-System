@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../assets/style/singOut.css';
+import '../assets/style/SingOut.css';
  
 function SingOut() {
 
