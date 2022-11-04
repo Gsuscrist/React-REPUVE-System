@@ -9,11 +9,12 @@ function Header() {
             <img className='logoGobierno' src={Gobierno}/>
             <div className='opc'> 
                 <ul>
-                    <li><a className="tramite" href="/consultaVehi">Tramite</a></li>
-                    <li><a className="registro" href="/RegistroVehi">Registro</a></li>
+                    <li><a className="elegir" href="/consultaVehi">Tramite</a></li>
+                    <li><a className="elegir" href="/RegistroVehi">Registro</a></li>
                 </ul> 
             </div> 
-            <img className='logoPerfil' src={Perfil}/>
+            <a href="/SingOut"><img className='logoPerfil' src={Perfil}/></a>
+           
         </div>
     );
 }

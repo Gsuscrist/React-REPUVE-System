@@ -22,19 +22,23 @@ input{
 }
 button[type="submit"]{
     margin-left: 40%;
+    margin-bottom: 20px;
     width: 30%;
     padding: 2px;
     background: #79C8A0;
     border: 1.07509px solid rgba(0, 0, 0, 0.2);
     border-radius: 5%;
 }
-.registrar{
-    width: 100%;
-    margin-top: 20px;
+.inicio{
+    color: aliceblue;
+    text-decoration: none;
+}
+.registrarInicio{
     background: #000000;
     border-radius: 5%;
-    padding: 3px;
-    display: flex;
-    justify-content:end;
-
+    margin-left:15px ;
+    padding-left: 34%;
+    padding-right: 30%;
+    color: aliceblue;
+    text-decoration: none;
 }

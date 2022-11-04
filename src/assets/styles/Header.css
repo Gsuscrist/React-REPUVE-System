@@ -14,7 +14,7 @@ ul{
 ul li{
     DISPLAY: inline;
 }
-a{
+.elegir{
     color: aliceblue;
     text-decoration: none;
     margin-right: 30%
@@ -25,8 +25,7 @@ margin-left: 2%;
 }
 
 .logoPerfil{
-    width: 2%;
-    height: 2%;
-    margin-top: 1%;
-    margin-left: 4%;
+    width: 30%;
+    margin-top: 6%;
+    margin-left: 45%;
 }

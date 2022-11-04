@@ -2,15 +2,12 @@ import { ActionButton } from "../components/ActionButton";
 import repuveAviso from "../assets/imgs/repuve-aviso.jpg";
 import repuveAtencion from "../assets/imgs/repuve-atencion.png";
 import addressPhoto from "../assets/imgs/address-photo.png";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 
 import "../assets/styles/Home.css";
 
 export function Home() {
   return (
-    <>
-      <Header />
       <div>
         <div>
           <button  type="submit"><a  href="/VehicleView">Consuta tu vehiculo</a></button>
@@ -53,8 +50,7 @@ export function Home() {
             </div>
           </div>
       </div>
-      <Footer />
-    </>
+     
   );
 }
 export default Home;

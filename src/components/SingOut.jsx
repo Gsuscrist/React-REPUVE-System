@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import '../assets/styles/singOut.css';
- 
-function SingOut() {
+import Header from './Header'; 
+import Footer from './Footer';
 
+function SingOut() {
+    
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
  
@@ -28,6 +30,7 @@ function SingOut() {
     
     return (
      <>
+     <Header />
         <form className="iniciosesion" onSubmit={handleSubmit}>
             <div className="container_login">
                 <h1>Iniciar Sesión</h1>
@@ -38,14 +41,14 @@ function SingOut() {
                     <input type="password" id="password" value={password}  onChange={handleChangePassword}/>
                 
                 <div>
-                    <button type="submit" onClick={()=>(console.log("hola"))}><a  href="/Home">Inicio</a></button>
+                    <button type="submit" onClick={()=>(console.log("hola"))}><a  href="/Home" className='inicio'>Inicio</a></button>
                 </div>
-                <div className='registrar'>
-                    <a href="/registrase">Registarme aqui</a>
+                <div >
+                    <a href="/registrase" className='registrarInicio'>Registarme aqui</a>
                 </div>
             </div>
         </form>
-        
+        <Footer/>
        </>
       );
 }
