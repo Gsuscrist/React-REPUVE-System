@@ -11,22 +11,24 @@ function SingOut() {
     const handleChangeUsername= (event)=> setUsername(event.target.value)
     const handleChangePassword= (event)=> setPassword(event.target.value)
 
+    const comprobar =(data)=> {
+         Usuario=data.getUsuario()
+         console.log(Usuario)
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
        
-
         console.log('QUE SE HACE')
-            useEffect(function(){
-                fetch('http://localhost:8080')
+
+                fetch('http://localhost:8080/user/')
                 .then (response => response.json())
-                .then (data => setData(data))
+                .then (data => comprobar(data))
                 .catch(err => console.log(err))
-        },[])
 
     } 
     
     return (
-     
+     <>
         <form className="container" onSubmit={handleSubmit}>
             <div className="container_login">
                 <h1>Iniciar Sesión</h1>
@@ -38,14 +40,16 @@ function SingOut() {
                     <input type="password" id="password" value={password}  onChange={handleChangePassword}/>
                 
                 <div>
-                    <button onClick={()=>(console.log("hola"))}>Iniciar</button>
+
+                    <button type="submit" onClick={()=>(console.log("hola"))}>Iniciar</button>
                 </div>
                 <div className='registrar'>
-                <a href="">Registarme aqui</a>
+                    <a href="">Registarme aqui</a>
                 </div>
             </div>
         </form>
-       
+        
+       </>
       );
 }
 export default SingOut;

@@ -22,7 +22,7 @@ input{
     margin-top: 5px;
     padding: 5px;
 }
-button{
+button[type="submit"]{
     margin-left: 40%;
     width: 30%;
     padding: 2px;
@@ -37,5 +37,6 @@ button{
     background: #000000;
     border-radius: 5%;
     padding: 3px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
