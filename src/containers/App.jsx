@@ -1,12 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Formulario from "../components/Formulario.jsx";
+import VehicleView from "../components/VehicleView";
 function App(){
     return(
         <>
-            <Header/>
-            <Formulario/>
-            <Footer/>
+            <Header></Header>
+            <VehicleView></VehicleView>
+            <Footer></Footer>
         </>
 
 
