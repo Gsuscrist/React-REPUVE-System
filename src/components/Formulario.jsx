@@ -1,14 +1,17 @@
 import '../assets/styles/Formulario.css'
 import car from '../assets/imgs/car.svg'
 import Advertencia from "./Advertencia.jsx";
-import '../assets/styles/upload.css'
-import upload from '../assets/imgs/upload.png'
-import back from '../assets/imgs/back.svg'
+// import '../assets/styles/upload.css';
+// import upload from '../assets/imgs/upload.png';
+import back from '../assets/imgs/back.png';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 
 function Formulario(){
     return(
-            
-            <div id="registroVehi" className="container-registroVehicular">
+            <> <Header/>
+            <div  className="container-registroVehicular">
                 <div className="encabezado-registroVehicular">
                     <img src={car} alt="iconoLupa" className="iconoCar"/>
                     <h1 className="titulo">Registro Vehicular</h1>
@@ -41,8 +44,8 @@ function Formulario(){
                             <input type="file" name="" id="file"/>
                             <label for="file">
                                 <div class="centrar">
-                                    <img src={upload} alt=""/>
-                                     <h6>solo archivos jpg, png</h6>
+                                    {/* <img src={upload} alt=""/> */}
+                                     <h6>*imagen* <br /> solo archivos jpg, png</h6>
                                     </div>
                             </label>
                         </div>
@@ -55,6 +58,8 @@ function Formulario(){
                 </div>
 
             </div>
+            <Footer/>
+            </>
     );
 }
 

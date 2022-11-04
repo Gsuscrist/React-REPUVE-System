@@ -1,13 +1,11 @@
-.container{
+.iniciosesion{
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .container_login{
     width: 30%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    
+   
 }
 h1{
     text-align: center;
@@ -31,12 +29,12 @@ button[type="submit"]{
     border-radius: 5%;
 }
 .registrar{
-    width: 350px;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 60px;
     background: #000000;
     border-radius: 5%;
     padding: 3px;
     display: flex;
-    justify-content: center;
+    justify-content:end;
+
 }

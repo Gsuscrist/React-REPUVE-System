@@ -2,10 +2,13 @@ import '../assets/styles/Form.css'
 import Mensaje from "./Mensaje.jsx";
 import user from '../assets/imgs/user.png'
 import back from '../assets/imgs/back.png'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Form(){
     return(
-
+        <>
+            <Header/>
         <div id="registro" className="container-registroUsuario">
             <div className="registroUsuario">
                 <img src={user} alt="iconLupa" className="iconUser"/>
@@ -53,6 +56,8 @@ function Form(){
             </div>
 
         </div>
+        <Footer/>
+        </>
     );
 }
 

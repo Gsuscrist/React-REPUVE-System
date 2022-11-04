@@ -28,10 +28,9 @@ function SingOut() {
     
     return (
      <>
-        <form className="container" onSubmit={handleSubmit}>
+        <form className="iniciosesion" onSubmit={handleSubmit}>
             <div className="container_login">
                 <h1>Iniciar Sesión</h1>
-                
                     <label htmlFor="username">Usuario</label><br />
                     <input type="text" id="username" value={username} onChange={handleChangeUsername} /><br />
                     
@@ -39,11 +38,10 @@ function SingOut() {
                     <input type="password" id="password" value={password}  onChange={handleChangePassword}/>
                 
                 <div>
-
-                    <button type="submit" onClick={()=>(console.log("hola"))}>Iniciar</button>
+                    <button type="submit" onClick={()=>(console.log("hola"))}><a  href="/Home">Inicio</a></button>
                 </div>
                 <div className='registrar'>
-                    <a href="#VehicleView">Registarme aqui</a>
+                    <a href="/registrase">Registarme aqui</a>
                 </div>
             </div>
         </form>

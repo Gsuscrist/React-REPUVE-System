@@ -2,16 +2,16 @@ import car from '../assets/imgs/car.jpg'
 import '../assets/styles/VehicleView.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Layout from '../containers/Layout';
 
 
 function VehicleView(){
-
-    return (
-        <div id="VehicleView">
-        <Header></Header>
+    return ( 
+        <div >
+            <Header/>
             <div  className={"vehicleview"}>
                 <input className={"vehicleData"} value={"Car model"} disabled={true}/>
-        <img className={"vehiclePic"} src={car} alt={"car picture"}/>
+                <img className={"vehiclePic"} src={car} alt={"car picture"}/>
                 <div className={"information"}>
                     <div className={"infoBox"}>
                         <label> brand:</label>
@@ -50,8 +50,7 @@ function VehicleView(){
                 </div>
             </div>
             <button className="button-28" role="button"> Volver </button>
-
-            <Footer></Footer>
+            <Footer/>
         </div>
     );
 }
