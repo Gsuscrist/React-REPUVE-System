@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
 import VehicleView from "../components/VehicleView";
 function App(){
     return(
@@ -8,8 +9,7 @@ function App(){
             <VehicleView></VehicleView>
             <Footer></Footer>
         </>
-
-
     );
 }
+
 export default App;

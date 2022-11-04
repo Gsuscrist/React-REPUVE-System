@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background: #13322B;
-
+    margin-top: 90px;
 }
 .contenido{
     height: 380px;
@@ -30,8 +30,7 @@
     bottom: 67.8%;
 
 }
-
-/*/ESTE ES SPAN de los titulos/*/
+/*ESTE ES SPAN de los titulos*/
 .titulos{
     font-family: 'Montserrat';
     font-style: normal;
@@ -40,8 +39,7 @@
     line-height: 39px;
     color: #FFFFFF;
 }
-
-/*/AQUI VA LA PARTE DE ENLACES/*/
+/*AQUI VA LA PARTE DE ENLACES*/
 .enlaces{
     width: 300px;
 }
@@ -80,8 +78,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
-/*/AQUI VA EL SIGUENOS Y LAS ICONOS DE REDES SOCIALES/*/
+/*AQUI VA EL SIGUENOS Y LAS ICONOS DE REDES SOCIALES*/
 .RedesSociales{
     display: flex;
     flex-direction: column;
