@@ -1,0 +1,87 @@
+.registroUsuario{
+    display: flex;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.registroUsuario h1{
+    font-family: 'Montserrat';
+    margin-left: 45px;
+}
+
+.iconUser{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 90px;
+    top: 85px;
+    margin-top: 20px;
+}
+
+.button-volver{
+    display: flex;
+    margin-left: 400px;
+}
+.button-volver img{
+    position: relative;
+    top: 55px;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.button-volver h2{
+    font-size: 50px;
+}
+.inputs{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 90px;
+}
+.input-form{
+    width: 55%;
+    height: 35px;
+    border: 3px solid rgba(125, 123, 123, 0.64);
+    border-radius: 10px;
+}
+.input-texto{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.input-form:hover{
+    border-color:black
+}
+.button-registrar{
+    background: #13322B;
+    border-radius: 10px;
+    height: 40px;
+    width: 500px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-left: 225px;
+    margin-top: 50px;
+}
+.button-registrar:hover{
+    border-color: #FFFFFF;
+}
+
+.select-permisos {
+    width: 324px;
+    height: 35px;
+    border-radius: 5px;
+}
