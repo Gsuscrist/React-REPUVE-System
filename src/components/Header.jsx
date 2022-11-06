@@ -10,7 +10,7 @@ function Header() {
             <div className='opc'> 
                 <ul>
                     <li><a className="elegir" href="/consultaVehi">Tramite</a></li>
-                    <li><a className="elegir" href="/RegistroVehi">Registro</a></li>
+                    <li><a className="elegir" href="/registrarse">Registro</a></li>
                 </ul> 
             </div> 
             <a href="/SingOut"><img className='logoPerfil' src={Perfil}/></a>

@@ -1,34 +1,25 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import '../assets/styles/singOut.css';
 import Header from './Header'; 
 import Footer from './Footer';
 
 function SingOut() {
-    
+    const url = 'http://44.201.115.90';
+
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
- 
-         //manejador de evento, donde esta el value
+
     const handleChangeUsername= (event)=> setUsername(event.target.value)
     const handleChangePassword= (event)=> setPassword(event.target.value)
 
-    const comprobar =(data)=> {
-         Usuario=data.getUsuario()
-         console.log(Usuario)
-    }
     const handleSubmit = (e) => {
         e.preventDefault();
-       
-        console.log('QUE SE HACE')
-
-                fetch('http://localhost:8080/user/')
-                .then (response => response.json())
-                .then (data => comprobar(data))
-                .catch(err => console.log(err))
-
-    } 
-    
-    return (
+        fetch(url+'/user/usernameValidate/'+ username)
+        fetch(url+'/password/passwordValidate/'+password)
+        .then (response=>response.json())
+        .then (data=> data.status ? alert('INICIO DE SESION CORRECTO') : 'CUENTA INEXISTENTE')
+    }
+        return (
      <>
      <Header />
         <form className="iniciosesion" onSubmit={handleSubmit}>
@@ -41,7 +32,8 @@ function SingOut() {
                     <input type="password" id="password" value={password}  onChange={handleChangePassword}/>
                 
                 <div>
-                    <button type="submit" onClick={()=>(console.log("hola"))}><a  href="/Home" className='inicio'>Inicio</a></button>
+                <button type="submit" >Inicio</button>
+                    {/* <button type="submit" onClick={()=>(console.log("hola"))}><a  href="/Home" className='inicio'>Inicio</a></button> */}
                 </div>
                 <div >
                     <a href="/registrase" className='registrarInicio'>Registarme aqui</a>
@@ -53,4 +45,3 @@ function SingOut() {
       );
 }
 export default SingOut;
-
