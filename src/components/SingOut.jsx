@@ -21,7 +21,6 @@ function SingOut() {
     }
         return (
      <>
-     <Header />
         <form className="iniciosesion" onSubmit={handleSubmit}>
             <div className="container_login">
                 <h1>Iniciar Sesión</h1>
@@ -40,7 +39,6 @@ function SingOut() {
                 </div>
             </div>
         </form>
-        <Footer/>
        </>
       );
 }

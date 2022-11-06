@@ -1,31 +1,44 @@
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
 .header{
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
     background: #13322B;
+    height: 65px;
 }
-.opc{
-    margin-left: 62%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
+.imageGM{
+    width: 300px;
+    display: flex;
+    justify-content: center;
 }
-ul{
-    LIST-STYLE-TYPE: none;
+.logoTipo{
+    height: 60px;
 }
-ul li{
-    DISPLAY: inline;
+.opciones{
+    width: 245px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    left: 850px;
 }
-.elegir{
-    color: aliceblue;
+.opcion{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
     text-decoration: none;
-    margin-right: 30%
 }
-.logoGobierno{
-width: 15%;
-margin-left: 2%;
-}
-
-.logoPerfil{
-    width: 30%;
-    margin-top: 6%;
-    margin-left: 45%;
+.IconPerfil{
+    height: 45px;
+    position: absolute;
+    left: 91.47%;
+    right: 4.63%;
+    top: 1.19%;
 }
