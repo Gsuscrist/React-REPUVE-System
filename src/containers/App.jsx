@@ -3,12 +3,11 @@ import Footer from "../components/Footer";
 import ConsultaVehicular from "../pages/ConsultaVehicular";
 
 import VehicleView from "../components/VehicleView";
+import FormSignUpUser from "../components/FormSignUpUser.jsx";
 function App(){
     return(
         <>
-            {/* <Header></Header> */}
-            <ConsultaVehicular></ConsultaVehicular>
-            {/* <Footer></Footer> */}
+            <VehicleView></VehicleView>
         </>
     );
 }

@@ -1,4 +1,5 @@
 //LO MISMO MAMPOS, ENCONTRE DOS HEADERS
+
 import '../assets/styles/Header.css'
 
 import GobiernoMexico from '../assets/imgs/GobiernoDeMexico.png'
