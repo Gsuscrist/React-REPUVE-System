@@ -1,15 +1,17 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ConsultaVehicular from "../pages/ConsultaVehicular";
 
-import VehicleView from "../components/VehicleView";
-import FormSignUpUser from "../components/FormSignUpUser.jsx";
-function App(){
-    return(
-        <>
-            <VehicleView></VehicleView>
-        </>
-    );
+import Header from "../components/Header";
+import SingOut from "../components/SingOut";
+import Footer from "../components/Footer";
+
+
+function App() {
+      return (
+            <>
+                <Header></Header>
+                    <SingOut></SingOut>
+                <Footer></Footer> 
+            </>
+          );
 }
 
 export default App;
