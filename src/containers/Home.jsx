@@ -2,8 +2,7 @@ import { ActionButton } from "../components/ActionButton";
 import repuveAviso from "../assets/imgs/repuve-aviso.jpg";
 import repuveAtencion from "../assets/imgs/repuve-atencion.png";
 import addressPhoto from "../assets/imgs/address-photo.png";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 
 import "../assets/styles/Home.css";
 

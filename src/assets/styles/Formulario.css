@@ -1,3 +1,7 @@
+
+.container-registroVehicular{
+    width: 100%;
+}
 .encabezado-registroVehicular{
     display: flex;
     margin-left: 90px;

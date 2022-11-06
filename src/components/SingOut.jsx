@@ -43,4 +43,3 @@ function SingOut() {
       );
 }
 export default SingOut;
-

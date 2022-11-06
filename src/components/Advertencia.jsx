@@ -1,3 +1,4 @@
+
 import '../assets/styles/advertencia.css';
 function Advertencia() {
 

@@ -1,5 +1,9 @@
 import car from '../assets/imgs/car.jpg'
 import '../assets/styles/VehicleView.css'
+
+
+//CHEQUEN BIEN ESTE COMPONENTE, A LA HORA DE HACER MERGE CON "Kristel/avance #9 me marco algunos errores"
+
 function VehicleView(){
 
     return (
