@@ -6,9 +6,9 @@ import VehicleView from "../components/VehicleView";
 function App(){
     return(
         <>
-            <Header></Header>
+            {/* <Header></Header> */}
             <ConsultaVehicular></ConsultaVehicular>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </>
     );
 }

@@ -1,33 +1,47 @@
 import Header from '../components/Header';
-import Advertencia from '../components/Advertencia';
+//import Advertencia from '../components/Advertencia';
+import Advertencia from "../components/Advertencia"
 import Footer from '../components/Footer';
 
 import lupa from '../assets/imgs/lupa.png';
 import flecha from '../assets/imgs/Flecha.png';
 
-import '../assets/Styles/consultaVehicular.css';
+import '../assets/styles/consultaVehicular.css';
+import { useState } from 'react';
+
+import CarView from "../components/CarView"
 
 function Index() {
 
-    const handleSubmit = (event) =>{
-        event.preventDefault();
-        const consulta = {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                username: username,
-                password: password
-            })
-        }
-        fetch('',consulta) //se supone que ahi va de donde se va tomar la API
-        .then(response => response.json())
-        .then(data => data.status ? alert('Busqueda Exitosa') : 
-            alert('Ha ocurrido un error'))
-        .catch(err => console.log(err + 'no papi no agarra'))
-    };
+    const[ id, setId] = useState('');
+
+    const handleChangeId = (e) => {setId(e.target.value)}
+
+    function showCar (data) {
+        if (!data.success){
+            alert("matricula no registrada")
+        } else {
+        console.log(data.data)
+        
+        
+    }
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        const url = `http://54.175.145.36:8080/vehicle/${id}`;
+        console.log(url);
+        fetch(url)
+            .then( response => response.json() )
+            .then( data => showCar(data) )
+            .catch( error => console.log(error) )
+            
+        };
+
+
+
+
 
     return (  
         <>
@@ -40,14 +54,10 @@ function Index() {
                 <hr className="separacion"/>
                 <Advertencia/>
                 <div className="formulario-consultaVehicular">
-                    <form className="form-consultaVehicular">
+                    <form className="form-consultaVehicular" onSubmit={handleSubmit}>
                         <div className="inputs">
                             <span className="input-texto"> Numero de Placa (sin guiones o espacios) : </span>
-                            <input type="text" className="input-form" />
-                        </div>
-                        <div className="inputs">
-                            <span className="input-texto"> Numero de matricula (sin guiones o espacios) : </span>
-                            <input type="text" className="input-form"/>
+                            <input type="text" className="input-form" onChange={handleChangeId}/>
                         </div>
                         <button className="boton-entrar">BUSCAR</button>
                     </form>
@@ -61,6 +71,7 @@ function Index() {
                         <span className="Volver">Volver</span>
                     </button>
                 </div>
+                <div id='resultado'></div>
             </div>
             <Footer/>
         </>

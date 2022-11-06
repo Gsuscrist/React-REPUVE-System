@@ -1,4 +1,4 @@
-import '../assets/Styles/advertencia.css';
+import '../assets/styles/advertencia.css';
 function Advertencia() {
 
     return (
