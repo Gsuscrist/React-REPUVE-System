@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #13322B;
+    height: 65px;
+}
+.imageGM{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.logoTipo{
+    height: 60px;
+}
+.opciones{
+    width: 245px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    left: 850px;
+}
+.opcion{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.IconPerfil{
+    height: 45px;
+    position: absolute;
+    left: 91.47%;
+    right: 4.63%;
+    top: 1.19%;
+}

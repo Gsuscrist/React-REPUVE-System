@@ -1,52 +1,55 @@
-import Gobierno from '../assets/img/Gobierno.png'
-import facebook from "../assets/img/facebook.png"
-import twitter from "../assets/img/twitter.png"
-import '../assets/style/Footer.css'
+import GobiernoMexico from '../assets/imgs/GobiernoDeMexico.png';
+import Facebook from '../assets/imgs/FacebookBlanco.png';
+import Twitter from '../assets/imgs/twitterBlanco.png';
 
+//ENCONTRE DOS FOOTERS HACIENDO EL MERGE CHEQUEN QPD PORFA
+import '../assets/styles/footer.css'
+import '../assets/styles/Footer.css'
 
 function Footer() {
     return (
         <div className="footer">
-            <div className='colum'>
-                <div  className='columnas'>
-                    <img src={Gobierno} className="lopoGobierno" />
+            <div className="contenido">
+                <div className="logotipoGM">
+                    <img src={GobiernoMexico} alt="logotipo" className="logotipo"/>
                 </div>
-                <div className='columnas'>
-                    <h2>Enlaces</h2>
-                    <p>Datos</p>
-                    <p>Publicaciones</p>
-                    <p>Transparencias</p>
-                    <p>PNT</p>
-                    <p>INAI</p>
-                    <p>Alerta</p>
-                    <p>Denuncia</p>
-                </div>
-                <div  className='columnas'>
-                    <h2>¿Que es gob.mx?</h2>
-                    <p>Es el Portal Únio de Tramites, <br />
-                        Informacion y 
-                        Participacion Ciudadana.</p>
-                    <p>Temas</p>
-                    <p>Declaracion de Acessibilidad</p>
-                    <p>Aviso de Privacidad</p>
-                    <p>Aviso de Privacidad Simplificado</p>
-                    <p>Terminos y Condiciones</p>
-                    <p>Politias de seguridad</p>
-                    <p>Marco Juridico</p>
-                    <p>Mapa de sitio</p>
-
-                </div>
-                <div  className='columnas'>
-                    <h2>Siguenos en</h2>
-                    <div className='siguenos'>
-                        <img src={facebook} />
-                        <img src={twitter} />
+                <div className="enlaces">
+                    <span className="titulos">Enlaces</span>
+                    <div className="links">
+                        <a href="" className="link">Datos</a>
+                        <a href="" className="link">Publicaciones</a>
+                        <a href="" className="link">Transparencia</a>
+                        <a href="" className="link">PNT</a>
+                        <a href="" className="link">INAI</a>
+                        <a href="" className="link">Alerta</a>
+                        <a href="" className="link">Denuncia</a>
                     </div>
-                    
+                </div>
+                <div className="contexto">
+                    <span className="titulos">¿Que es gob.mx?</span>
+                    <p className="info">Es el portal único de trámites, información y participación ciudadana.</p>
+                    <br />
+                    <div className="informacion">
+                        <a href="" className="link">Temas</a>
+                        <a href="" className="link">Declaracion de Accesibilidad</a>
+                        <a href="" className="link">Aviso de Privacidad</a>
+                        <a href="" className="link">Aviso de Privacidad Simplificado</a>
+                        <a href="" className="link">Terminos y Condiciones</a>
+                        <a href="" className="link">Politicas de Seguridad</a>
+                        <a href="" className="link">Marco Juridico</a>
+                        <a href="" className="link">Mapa de Sitio</a>
+                    </div>
+                </div>
+                <div className="RedesSociales">
+                    <span className="siguenos">Siguenos en </span>
+                    <div className="iconos">
+                        <img src={Facebook} alt="Facebook" className="icons"/>
+                        <img src={Twitter} alt="Twitter" className="icons"/>
+                    </div>
                 </div>
             </div>
         </div>
-      );
+    );
 }
 
-export default Footer;
+export default Footer
