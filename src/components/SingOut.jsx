@@ -18,8 +18,6 @@ function SingOut() {
         .then (response=>response.json())
         .then (data=> data.status ? alert('INICIO DE SESION CORRECTO') : 'CUENTA INEXISTENTE')
     }
-       
-    
     return (
      <>
         <form className="container" onSubmit={handleSubmit}>
