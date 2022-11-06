@@ -3,29 +3,22 @@ import '../assets/style/SingOut.css';
  
 function SingOut() {
 
+    const url = 'http://44.201.115.90';
 
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
- 
-         //manejador de evento, donde esta el value
+
     const handleChangeUsername= (event)=> setUsername(event.target.value)
     const handleChangePassword= (event)=> setPassword(event.target.value)
 
-    const comprobar =(data)=> {
-         Usuario=data.getUsuario()
-         console.log(Usuario)
-    }
     const handleSubmit = (e) => {
         e.preventDefault();
+        fetch(url+'/user/usernameValidate/'+ username)
+        fetch(url+'/password/passwordValidate/'+password)
+        .then (response=>response.json())
+        .then (data=> data.status ? alert('INICIO DE SESION CORRECTO') : 'CUENTA INEXISTENTE')
+    }
        
-        console.log('QUE SE HACE')
-
-                fetch('http://localhost:8080/user/')
-                .then (response => response.json())
-                .then (data => comprobar(data))
-                .catch(err => console.log(err))
-
-    } 
     
     return (
      <>
