@@ -1,24 +1,18 @@
 
 import '../assets/styles/Header.css'
-
-import GobiernoMexico from '../assets/imgs/GobiernoDeMexico.png'
-import Perfil from '../assets/imgs/PerfilBlanco.png'
+import GobPic from '../assets/imgs/GobiernoDeMexico.png'
 
 function Header() {
     return (
         <div className="header">
             <div className="imageGM">
-                <img src={GobiernoMexico} alt="logo" className="logoTipo" />
+                <img src={GobPic} alt="logo" className="logoTipo" />
             </div>
             <div className="opciones">
-                <a href="" className="opcion">Opcion 1</a>
-                <a href="" className="opcion">Opcion 2</a>
-            </div>
-            <div className="perfil">
-                <img src={Perfil} alt="IconPerfil" className='IconPerfil' />
+                <a href="/consultaVehi" className="opcion">/ Consulta</a>
+                <a href="/RegistroVehi" className="opcion">/ Agregar Vehiculo</a>
             </div>
         </div>
     );
 }
-
 export default Header;

@@ -1,60 +1,62 @@
-import Header from '../components/Header';
-import Advertencia from "../components/Advertencia"
-import Footer from '../components/Footer';
-
 import lupa from '../assets/imgs/lupa.png';
-import flecha from '../assets/imgs/Flecha.png';
-
 import '../assets/styles/consultaVehicular.css';
-import { useState } from 'react';
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import VehicleCard from "../components/VehicleCard.jsx";
 
-import CarView from "../components/CarView"
+import {useState} from "react";
 
 function Index() {
 
-    const[ id, setId] = useState('');
+    const[ plate, setPlate] = useState('');
+    const [data, setData]=useState(null);
 
-    const handleChangeId = (e) => {setId(e.target.value)}
+    const handleChangePlate = (e) => {setPlate(e.target.value)};
 
-    function showCar (data) {
-        if (!data.success){
-            alert("matricula no registrada")
-        } else {
-        console.log(data.data)
-        
-        
-    }
-    }
 
-    const handleSubmit = (e) => {
+    const handleSubmit =(e)=>{
         e.preventDefault();
+
+        const option={
+            method: 'GET',
+            headers:{
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            // the body it's the most changable
+            body: JSON.stringify({
+                plate:plate
+            })
+        }
         
-        const url = `http://54.175.145.36:8080/vehicle/${id}`;
-        console.log(url);
-        fetch(url)
-            .then( response => response.json() )
-            .then( data => showCar(data) )
-            .catch( error => console.log(error) )
-            
-        };
+        console.log(`54.235.0.149:8080/vehicle/byplate/${plate}`);
+        fetch(`http://54.235.0.149:8080/vehicle/byplate/${plate}`)
+            .then( response => response.json())
+            .then( data => setData(data.data))
+            .catch( error => console.log(error))
+
+        }
+
+
 
 
     return (  
         <>
-            <Header/>
+            <Header></Header>
+
             <div className="container-consultaVehicular">
                 <div className="encabezado-consultaVehicular">
                     <img src={lupa} alt="iconoLupa" className="iconoLupa"/>
                     <h1 className="titulo">Consulta Vehicular</h1>
                 </div>
                 <hr className="separacion"/>
-                <Advertencia/>
+
                 <div className="formulario-consultaVehicular">
 
                     <form className="form-consultaVehicular" onSubmit={handleSubmit}>
                         <div className="inputs">
                             <span className="input-texto"> Numero de Placa (sin guiones o espacios) : </span>
-                            <input type="text" className="input-form" onChange={handleChangeId}/>
+                            <input type="text" className="input-form" onChange={handleChangePlate}/>
                         </div>
                         <button className="boton-entrar">BUSCAR</button>
                     </form>
@@ -62,17 +64,27 @@ function Index() {
                 <div className="articulo">
                     <span className="a_6">Este servicio de consulta es GRATUITO de acuerdo con el Artículo 6 de la Ley del Registro Público Vehicular.</span>
                 </div>
-                <div className="volver">
+                <br/>
 
-                    <button className="boton-volver" type="button">                   
+                {
 
-                        <img src={flecha} alt="iconVolver" className="iconoVolver" />
-                        <span className="Volver">Volver</span>
-                    </button>
-                </div>
-                <div id='resultado'></div>
-            </div>
-            <Footer/>
+                    data && data?.map(vehicle=>
+                    <VehicleCard
+                        key={vehicle.id}
+                        brand={vehicle.brand}
+                        color={vehicle.color}
+                        fuelType={vehicle.fuelType}
+                        mileage={vehicle.mileage}
+                        model={vehicle.model}
+                        plate={vehicle.plate}
+                        year={vehicle.year}
+                        />
+                )}
+</div>
+
+            <Footer></Footer>
+
+
         </>
     );
 }

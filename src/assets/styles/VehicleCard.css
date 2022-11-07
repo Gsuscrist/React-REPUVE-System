@@ -1,0 +1,14 @@
+.vehicleCard{
+    border: solid 2px #13322B;
+   margin-left:-100px;
+    margin-right: 100px;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+
+}
+
+span{
+    margin: 10px;
+    font-weight: bold;
+}

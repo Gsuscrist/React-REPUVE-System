@@ -16,7 +16,10 @@ body{
     justify-content: center;
 }
 .logoTipo{
+    position: static;
     height: 60px;
+    margin-left: -1000px;
+    border: solid 1px;
 }
 .opciones{
     width: 245px;

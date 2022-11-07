@@ -6,10 +6,10 @@ import addressPhoto from "../assets/imgs/address-photo.png";
 
 import "../assets/styles/Home.css";
 
-export function Home() {
+function Home() {
   return (
     <>
-      <Header />
+
       <main>
         <div>
           <h2>Registro Publico Vehicular REPUVE</h2>
@@ -51,7 +51,7 @@ export function Home() {
           </div>
         </div>
       </main>
-      {/* <Footer /> */}
+
     </>
   );
-}
+}export default Home;
