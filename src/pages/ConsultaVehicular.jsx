@@ -14,6 +14,17 @@ function Index() {
     const handleChangePlate = (e) => {setPlate(e.target.value)};
 
 
+    const viewCar = (data) => {
+
+        console.log(data);
+        if ( data.data.length == 0 ) {
+            alert("Matricula no registrada!")
+
+        }else {
+            setData(data.data)
+        }
+    }
+
     const handleSubmit =(e)=>{
         e.preventDefault();
 
@@ -30,9 +41,9 @@ function Index() {
         }
         
         console.log(`54.235.0.149:8080/vehicle/byplate/${plate}`);
-        fetch(`http://54.235.0.149:8080/vehicle/byplate/${plate}`)
+        fetch(`http://54.172.101.164:8080/vehicle/byplate/${plate}`)
             .then( response => response.json())
-            .then( data => setData(data.data))
+            .then( data => viewCar(data))
             .catch( error => console.log(error))
 
         }

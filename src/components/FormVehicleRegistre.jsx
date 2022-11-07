@@ -41,8 +41,8 @@ var id;
                 plate: plate
             })
         }
-
-        fetch('http://52.90.95.153:8080/vehicle', option)
+        
+        fetch('http://54.172.101.164:8080/vehicle', option)
             .then(response=>response.json())
             .then(data=> data.status ? alert('nice'):alert('Registro exitoso'))
             .catch(err=>console.log('err'))
